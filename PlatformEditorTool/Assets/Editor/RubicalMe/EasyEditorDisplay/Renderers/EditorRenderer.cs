@@ -112,6 +112,9 @@ namespace RubicalMe
 			/// <param name="gameObject">Object to render, MeshRenderer and MeshFilter componens are required.</param>
 			public void AddGameObject (GameObject gameObject)
 			{
+				if (gameObject == null) {
+					return;
+				}
 				AddGameObjectInternal (gameObject, Vector3.zero, gameObject.transform.localRotation, gameObject.transform.localScale);
 				CallDirty ();
 			}
@@ -122,6 +125,9 @@ namespace RubicalMe
 			/// <param name="gameObject">Object to render, MeshRenderer and MeshFilter componens are required.</param>
 			public void AddGameObject (GameObject gameObject, Vector3 position, Quaternion rotation)
 			{
+				if (gameObject == null) {
+					return;
+				}
 				AddGameObjectInternal (gameObject, position, rotation, gameObject.transform.localScale);
 				CallDirty ();
 			}
@@ -132,6 +138,9 @@ namespace RubicalMe
 			/// <param name="gameObject">Object to render, MeshRenderer and MeshFilter componens are required.</param>
 			public void AddGameObject (GameObject gameObject, Vector3 position, Vector3 eulerAngles)
 			{
+				if (gameObject == null) {
+					return;
+				}
 				AddGameObjectInternal (gameObject, position, Quaternion.Euler (eulerAngles), gameObject.transform.localScale);
 				CallDirty ();
 			}
@@ -142,6 +151,9 @@ namespace RubicalMe
 			/// <param name="gameObject">Object to render, MeshRenderer and MeshFilter componens are required.</param>
 			public void AddGameObject (GameObject gameObject, Vector3 position, Vector3 eulerAngles, Vector3 scale)
 			{
+				if (gameObject == null) {
+					return;
+				}
 				AddGameObjectInternal (gameObject, position, Quaternion.Euler (eulerAngles), scale);
 				CallDirty ();
 			}
@@ -152,6 +164,9 @@ namespace RubicalMe
 			/// <param name="gameObject">Object to render, MeshRenderer and MeshFilter componens are required.</param>
 			public void AddGameObject (GameObject gameObject, Vector3 position, Quaternion rotation, Vector3 scale)
 			{
+				if (gameObject == null) {
+					return;
+				}
 				AddGameObjectInternal (gameObject, position, rotation, scale);
 				CallDirty ();
 			}
@@ -161,6 +176,9 @@ namespace RubicalMe
 			/// </summary>
 			public void AddTexture (Texture2D texture)
 			{
+				if (texture == null) {
+					return;
+				}
 				AddTextureInternal (texture, Vector3.zero, Quaternion.identity, new Vector3 (1, 1, 1), 100);
 			}
 
@@ -169,6 +187,9 @@ namespace RubicalMe
 			/// </summary>
 			public void AddTexture (Texture2D texture, float pixelRatio)
 			{
+				if (texture == null) {
+					return;
+				}
 				AddTextureInternal (texture, Vector3.zero, Quaternion.identity, new Vector3 (1, 1, 1), pixelRatio);
 			}
 
@@ -177,6 +198,9 @@ namespace RubicalMe
 			/// </summary>
 			public void AddTexture (Texture2D texture, Vector3 position, float pixelRatio)
 			{
+				if (texture == null) {
+					return;
+				}
 				AddTextureInternal (texture, position, Quaternion.identity, new Vector3 (1, 1, 1), pixelRatio);
 			}
 
@@ -185,6 +209,9 @@ namespace RubicalMe
 			/// </summary>
 			public void AddTexture (Texture2D texture, Vector3 position, Quaternion rotation, float pixelRatio)
 			{
+				if (texture == null) {
+					return;
+				}
 				AddTextureInternal (texture, position, rotation, new Vector3 (1, 1, 1), pixelRatio);
 			}
 
@@ -193,12 +220,17 @@ namespace RubicalMe
 			/// </summary>
 			public void AddTexture (Texture2D texture, Vector3 position, Quaternion rotation, Vector3 scale, float pixelRatio)
 			{
+				if (texture == null) {
+					return;
+				}
 				AddTextureInternal (texture, position, rotation, scale, pixelRatio);
 			}
 
 			protected void AddTextureInternal (Texture2D texture, Vector3 position, Quaternion rotation, Vector3 scale, float pixelRatio)
 			{
-
+				if (texture == null) {
+					return;
+				}
 				float width = texture.height / pixelRatio;
 				float height = texture.width / pixelRatio;
 
@@ -233,6 +265,9 @@ namespace RubicalMe
 
 			protected void AddGameObjectInternal (GameObject gameObject, Vector3 position, Quaternion rotation, Vector3 scale)
 			{
+				if (gameObject == null) {
+					return;
+				}
 				if (gameObject.transform.childCount != 0) {
 					for (int i = 0; i < gameObject.transform.childCount; i++) {
 						GameObject child = gameObject.transform.GetChild (i).gameObject;

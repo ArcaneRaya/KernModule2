@@ -29,8 +29,8 @@ public class Example_EasyInteractiveDisplay : EditorWindow_EasyInteractiveDispla
 	public override void OnEnable ()
 	{
 		base.OnEnable ();
-		Texture2D backButtonTex = Resources.Load ("back") as Texture2D;
-		Texture2D forwardButtonTex = Resources.Load ("forward") as Texture2D;
+		Texture2D backButtonTex = (Texture2D)EditorGUIUtility.Load ("RubicalMe/EditorRendererExample/back.png");
+		Texture2D forwardButtonTex = (Texture2D)EditorGUIUtility.Load ("RubicalMe/EditorRendererExample/forward.png");
 
 		// provide a method as a normal delegate
 		Display.GUISystem.AddButton (RotateRight, forwardButtonTex, Vector2.zero, GUISnapMode.BottomRight);
@@ -49,11 +49,13 @@ public class Example_EasyInteractiveDisplay : EditorWindow_EasyInteractiveDispla
 	{
 		rotationEuler -= new Vector3 (0, value, 0);
 		SetObjectInDisplay ();
+		Repaint ();
 	}
 
 	private void RotateRight (RM_ButtonEvents e)
 	{
 		rotationEuler += new Vector3 (0, 45, 0);
 		SetObjectInDisplay ();
+		Repaint ();
 	}
 }
