@@ -20,7 +20,7 @@ public class PlacableObject_Editor : Editor_EasyInteractiveDisplay
 	private const int VERSION = 1;
 	private const int GUIOFFSET_X = 4;
 	private const int GUIOFFSET_Y = 1;
-	private const string TEXTURESPATH = "Rubical/PlatformEditor/Textures/";
+	private const string TEXTURESPATH = "RubicalMe/PlatformEditor/Textures/";
 	private const int BUTTONSIZE = 100;
 	private const int PADDING = 20;
 	private const float BUTTONOFFSET_X = -.5f;
