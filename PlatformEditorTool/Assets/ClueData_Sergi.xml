@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ClueDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <clues>
+    <Quest_Clues>
+      <ID>333</ID>
+      <clue>There’s shoe marks on the wall next to the fence. A cheap brand of sneakers.</clue>
+      <found>0</found>
+      <isKeyClue>false</isKeyClue>
+    </Quest_Clues>
+    <Quest_Clues>
+      <ID>334</ID>
+      <clue>There’s a torn piece of a dark blue coat on the top of the fence.</clue>
+      <found>0</found>
+      <isKeyClue>false</isKeyClue>
+    </Quest_Clues>
+    <Quest_Clues>
+      <ID>335</ID>
+      <clue>There’s a needle on the floor. The tip is still wet.</clue>
+      <found>0</found>
+      <isKeyClue>false</isKeyClue>
+    </Quest_Clues>
+    <Quest_Clues>
+      <ID>336</ID>
+      <clue>There’s teens loitering everywhere.</clue>
+      <found>0</found>
+      <isKeyClue>false</isKeyClue>
+    </Quest_Clues>
+    <Quest_Clues>
+      <ID>337</ID>
+      <clue>The correct suspect is out of breath and has a torn coat.</clue>
+      <found>0</found>
+      <isKeyClue>false</isKeyClue>
+    </Quest_Clues>
+    <Quest_Clues>
+      <ID>338</ID>
+      <clue>Seen anything suspicious? Yea, a guy in a hoodie walked by here, he went that way.</clue>
+      <found>1</found>
+      <isKeyClue>false</isKeyClue>
+    </Quest_Clues>
+    <Quest_Clues>
+      <ID>339</ID>
+      <clue>I see suspicious people all the time. There’s one behind you right now. Oh no, she flew</clue>
+      <found>0</found>
+      <isKeyClue>false</isKeyClue>
+    </Quest_Clues>
+    <Quest_Clues>
+      <ID>340</ID>
+      <clue>Suspicious people? No sorry, haven’t seen anyone.</clue>
+      <found>0</found>
+      <isKeyClue>false</isKeyClue>
+    </Quest_Clues>
+    <Quest_Clues>
+      <ID>341</ID>
+      <clue>wsers</clue>
+      <found>0</found>
+      <isKeyClue>false</isKeyClue>
+    </Quest_Clues>
+    <Quest_Clues>
+      <ID>342</ID>
+      <clue />
+      <found>0</found>
+      <isKeyClue>false</isKeyClue>
+    </Quest_Clues>
+  </clues>
+</ClueDatabase>
