@@ -1,12 +1,20 @@
-﻿#define SIMPLE
+﻿/*
+ * COMPARISON DEMO
+ * 
+ * Hereunder I've created a small example for comparison between my system
+ * and trying to do it without. As you can see, there is already quite a bit
+ * of difference in readability and size.
+ * 		On top of that, there is no support yet for child objects and scaling,
+ * this would require further scripting on the display.
+ * 
+ */
+#define SIMPLE
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using RubicalMe;
-
-
 
 #if SIMPLE
 [CustomEditor (typeof(ScriptableObjectHolder))]
@@ -44,17 +52,6 @@ public class ObjectHolder_Editor : Editor_EasySimpleDisplay
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
 
 #else
 [CustomEditor (typeof(ScriptableObjectHolder))]

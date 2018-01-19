@@ -4,6 +4,18 @@ using RubicalMe.Renderers;
 
 namespace RubicalMe
 {
+	// NOTE: Without summary tags because mono-develop acts weird when summary tags are used.....
+	/// <para>
+	/// This extension of the EditorWindow class adds the functionality of a controlled / customizable 
+	/// preview area at the bottom.
+	/// </para>
+	/// <remarks>
+	/// Override the InteractiveRendererDisplay property to assign a custom drawing position of the 
+	/// preview area.
+	/// <para>When overriding the OnEnable or OnGUI methods, make sure to call the base method or
+	/// functionality could get lost.</para>
+	/// </remarks>
+	/// <seealso cref="EditorWindow_EasyInteractiveDisplay"/>
 	public class EditorWindow_EasySimpleDisplay : EditorWindow
 	{
 		protected EditorRenderer Display {
